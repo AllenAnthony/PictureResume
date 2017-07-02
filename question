@@ -1,0 +1,10 @@
+corrImg = (corrImg - minX)/(maxX-minX) # adjust the value of element to the ratio of the orignal ratio based on max ratio
+为什么要把corrImg归一化，复原的时候颜色会更深啊？
+
+Phi_mu = np.linspace(1, cols, basisNum)/cols
+为啥要从1/cols开始分割？
+为啥没有用最后的1作为mu值之一？
+
+Phi[:, j] = normpdf(x[(ddIdx)], Phi_mu[j-1], Phi_sigma[j-1]) * np.sqrt(2*np.pi) * Phi_sigma[j-1]
+为啥最后要乘上np.sqrt(2*np.pi) * Phi_sigma[j-1]
+
